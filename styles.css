@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-align: center; 
+}
+.bg-koala {
+    opacity: 0.4;
+    position: fixed;
+    height: 100%;
+    right: -120px;
+    z-index: -1;
+}
+/*---------- header-table -------------*/
+header {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(115, 200, 169, .6), rgba(245, 222, 179, .6));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    }
+header a {
+    flex: 0 1 auto;
+    align-self: auto;
+    text-decoration: none;
+    color: black;
+    transition: background .2s ease .2s;
+    margin-left: 10px;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+    padding: 15px 20px;
+}
+.navbar-link {
+    white-space: nowrap;
+}
+header .navbar-link:hover {
+    background: rgba(126,211,134, .5);
+    border-radius: 5px;
+    transition: all .2s ease .2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+a .logo {
+    background: url(images/save%20me.png) no-repeat 0 -5px;
+    background-size: cover;
+    display: inline-block;
+    min-width: 100px;
+    min-height: 90px;
+    border-radius: 7px;
+    margin: 5px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    z-index: 4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+
+}
+.logo-title {
+    position: absolute;
+    left: -135px;
+    top: 3px;
+    text-align: right;
+    font-weight: 800;
+    color: rgba(126,211,134,1);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .35);
+    font-size: 1.3em;
+    
+}
+.greets {
+    
+    
+    background-size: cover;
+    margin-bottom: -4px;
+    
+}
+.greets img {
+    
+    max-width: 100%;
+    
+}
+/*------- pic after header ----------*/
+.pic-full-screen {
+    background: linear-gradient(to bottom, rgba(115, 200, 169, .6), rgba(245, 222, 179, .6));
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.is-there-a-dung {
+    background: #7ED386;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 1.7em;
+    margin-top: 50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.07), 
+              0 2px 2px rgba(0,0,0,0.07), 
+              0 4px 4px rgba(0,0,0,0.07), 
+              0 8px 8px rgba(0,0,0,0.07);   
+}
+/*-------------main content----------*/
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.boxes {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: white;
+    margin: 40px 30px 20px 30px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+              0 4px 2px rgba(0,0,0,0.09), 
+              0 8px 4px rgba(0,0,0,0.09), 
+              0 16px 8px rgba(0,0,0,0.09),
+              0 32px 16px rgba(0,0,0,0.09);
+}
+.box1 {
+    background: url(images/120216065734-koala-cars-horizontal-large-gallery.jpg) no-repeat;
+    background-size: cover;
+}
+.box2 {
+    background: url(images/496964ab8ea309a3254364f189699f9d95ba9d09.webp) -20px no-repeat; 
+    background-size: cover;
+}
+.box3 {
+    background: url(images/koala-hospital.jpg) no-repeat -35px;
+    background-size: cover;
+}
+.box4 {
+    background: url(images/maxresdefault.jpg) -100px no-repeat;
+    background-size: cover;
+}
+.box-hover {
+    visibility: hidden;
+    bottom: 80px;
+}
+.box1:hover .box1-hover {
+    visibility: visible;
+    background: #7ED386;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 170px;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+    transition: all .4s ease .2s;
+    cursor: default;
+}
+.box2:hover .box2-hover {
+    visibility: visible;
+    background: #7ED386;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 170px;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+    transition: all .4s ease .2s;
+    cursor: default;
+}
+.box3:hover .box3-hover {
+    visibility: visible;
+    background: #7ED386;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 170px;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+    transition: all .4s ease .2s;
+    cursor: default;
+}
+.box4:hover .box4-hover {
+    visibility: visible;
+    background: #7ED386;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 170px;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+    transition: all .4s ease .2s;
+    cursor: default;
+}
+.boxes::after {
+    content: "CARS AND DOGS";
+    position: absolute;
+    width: 270px;
+    padding: 10px 5px;
+    background: #7ED386;
+    color: white;
+    text-align: center;
+    top: 10px;
+    left: -10px;
+    box-sizing: border-box;
+    box-shadow: rgba(3,48,14, .5) 0 1px 2px 1px;
+}
+.box2::after {
+    content: "BUSHFIRES";
+}
+.box3::after {
+    content: "DISEASES";
+}
+.box4::after {
+    content: "DIEBACK";
+}
+/*----------- pic full screen 2 --------*/
+.pic-full-screen2 {
+    background: linear-gradient(to bottom, rgba(115, 200, 169, .6), rgba(245, 222, 179, .6));
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.koala-protection {
+    background: #7ED386;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 1.7em;
+    margin-top: 50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.07), 
+              0 2px 2px rgba(0,0,0,0.07), 
+              0 4px 4px rgba(0,0,0,0.07), 
+              0 8px 8px rgba(0,0,0,0.07);
+}
+/*----------- left side contact links ----*/
+.lside-bar {
+    background: #333;
+    position: fixed;
+    height: 90px;
+    width: 260px;
+    padding: 10px;
+    left: -260px;
+    top: 50px;
+    transition: all .7s ease .2s;
+    text-align: center;
+    z-index: 5;
+}
+.visible-part {
+    position: absolute;
+    transform: rotateZ(-90deg);
+    background: #FFCF00;
+    width: 90px;
+    padding: 15px 5px;
+    right: -60px;
+    top: 20px;
+    border-radius: 0 0 5px 5px;
+    height: 50px;
+    font-weight: 100;
+    font-size: 1.2em;
+    color: white;
+    z-index: 5;
+}
+.slide-bar {
+    left: 0px;
+    transition: all .7s ease .2s;
+    z-index: 5;
+}
+.side-logo {
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.fbook-logo {
+    background: url(images/fb-logo.jpg) no-repeat;
+    margin-left: -5px;
+    z-index: 5;
+}
+.instagram-logo {
+    background: url(images/insta-logo.jpg) no-repeat;
+    z-index: 5;
+}
+.youtube-logo {
+    background: url(images/tube-logo.jpg) no-repeat;
+    z-index: 5;
+}
+/*------------  main-text ---------------*/
+.main-text-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start; 
+    
+}
+.main-text p {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    max-width: 1200px;
+    text-align: left;
+}
+/*------------ full screen pic 3 -------*/
+.pic-full-screen3 {
+    background: linear-gradient(to bottom, rgba(115, 200, 169, .6), rgba(245, 222, 179, .6));
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.your-help {
+    background: #7ED386;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 1.7em;
+    margin-top: 50px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.07), 
+              0 2px 2px rgba(0,0,0,0.07), 
+              0 4px 4px rgba(0,0,0,0.07), 
+              0 8px 8px rgba(0,0,0,0.07);
+}
+/*chess cell content*/
+.chess-cell {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.chess {
+    min-width: 350px;
+    min-height: 350px;
+    margin-bottom: -40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+    position: relative;
+
+}
+.donate {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    background: url(images/Charity.jpg) no-repeat -50px;
+    background-size: cover;
+}
+.adopt {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    background: url(images/boy-holding-koala-at-cairns-zoom.jpg) no-repeat 0 -50px;
+}
+.plant {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    background: url(images/axnnhpa9bejt8bm7zvw7.jpg) no-repeat;
+    background-size: cover;
+}
+.follow {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: flex-end;
+    background: url(images/social-media.jpg) no-repeat;
+}
+.chess-text > h3 {
+    position: absolute;
+    background: #7ED386;
+    width: 500px;
+    top: 65px;
+    padding: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.14), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11); 
+              
+}
+.chess-text > b {
+    position: absolute;
+    background: #7ED386;
+    width: 500px;
+    top: 135px;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.14), 
+              0 2px 2px rgba(0,0,0,0.08), 
+              0 4px 4px rgba(0,0,0,0.08), 
+              0 6px 8px rgba(0,0,0,0.08),
+              0 8px 16px rgba(0,0,0,0.08);
+}
+/*pulse rule*/
+@keyframes shadow-pulse {
+     0% {
+          box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.3);
+     }
+     100% {
+          box-shadow: 0 0 0 30px rgba(255, 0, 0, 0);
+     }
+}
+.pulse a {
+    display: inline-block;
+    width: 500px;
+    text-decoration: none;
+    color: white;
+}
+.pulse a span {
+    padding: 6px;
+    display: inline-block;
+}
+h3.pulse {
+    background: red;
+    display: inline-block;
+    top: 40px;
+    color: white;
+    overflow: hidden;
+    margin-top: 45px;
+    transition: all .5s ease .2s;
+    animation: shadow-pulse .8s infinite;
+    padding: 0;
+}
+.donate-text > h3,
+.plant-text > h3 {
+    left: 310px;
+}
+.adopt-text > h3,
+.follow-text > h3 {
+    right: 310px;
+}
+.adopt-text > b,
+.follow-text > b {
+    right: 310px;
+}
+.donate-text > b,
+.plant-text > b {
+    left: 310px;
+}
+/*-------------- faqs --------------------*/
+.faqs-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center; 
+}
+.faqs {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    max-width: 1100px;
+    text-align: left;
+}
+h4 {
+    background: #7ED386;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.h4-1 {
+    margin-top: 45px;
+}
+/*--------------donation page----*/
+.donate1 {
+    font-size: 1.5em;
+}
+.donate2 {
+    margin-top: 20px;
+}
+.payment {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #7ED386;
+    width: 350px;
+    height: 130px;
+    margin-right: 5px;
+    margin-top: 0px;
+    vertical-align: top;
+    margin-bottom: 10px;
+    
+}
+.payment2 {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #7ED386;
+    width: 350px;
+    height: 130px;
+    margin-right: 5px;
+    margin-top: 0px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+.payment21 {
+    padding: 10px;
+    border: 3px solid #7ED386;
+    width: 350px;
+    height: 270px;
+    margin-right: 5px;
+    margin-top: 0px;
+    vertical-align: top;
+    float: left;
+    
+}
+.payment21 img {
+   max-width: 300px; 
+}
+/*----------contact page-------------*/
+.username,
+.useremail,
+.usercountry {
+    width: 255px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    border: 3px solid #7ED386;
+    outline: none;
+}
+.userage {
+    width: 140px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    border: 3px solid #7ED386;
+    outline: none;
+}
+.form-submit {
+    background: #FFCF00;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 120px;
+    outline: none;
+    cursor: pointer;
+    
+}
+textarea {
+    width: 932px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 180px;
+    border: 3px solid #7ED386;
+    outline: none;
+}
+.address {
+    padding: 5px;
+    display: inline-block;
+    width: 305px;
+    height: 150px;
+    border: 3px solid #7ED386;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+.skip-line {
+    display: inline-block;
+}
+.email-warn {
+    font-size: .85em;
+    color: darkslategray;
+    display: inline-block;
+      
+}
+.sm-link {
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 1px solid black;
+    height: 70px;
+}
+/*----who we are--------*/
+.volunteers-wrap img {
+    
+    max-height: 300px;
+    display: block;
+}
+.volunteers-wrap .p1 {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.map-wrap img {
+    max-height: 400px;
+    display: block;
+}
+.map1 {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.map2 {
+    border: 1px solid #79B0DD;
+}
+/*-------gallery---------*/
+.gallery-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    margin-top: 45px;
+    text-align: center;
+}
+.gallery-container a {
+    overflow: hidden
+}
+.gallery-container img {
+    margin: 5px;
+    max-height: 190px;
+    z-index: 1;
+    transition: .6s;
+}
+.gallery-container img:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}
+/*---------footer-------------*/
+footer {
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(115, 200, 169, .4), rgba(245, 222, 179, .4));
+    text-align: center;
+    margin-top: -70px;
+}
+.footer-content {
+    padding-top: 15px;
+}
+.footer-content a {
+    color: black;
+    text-decoration: none;
+    font-size: .85em;
+    margin: 15px 10px 15px 0;
+}
+.copyright {
+    color: grey;
+    font-size: .7em;
+}
+/*footer aligning*/
+.general-wrapper {
+  min-height: 100%;
+}
+.general-content {
+  padding-bottom: 140px;
+}
+/*-----responsibility----------*/
+@media only screen and (max-width : 767px) {
+    .chess{
+        margin-top: 50px;
+    }
+    .donate-text > h3,
+    .plant-text > h3 {
+        left: 15px;
+        width: 455px;
+    }
+    .adopt-text > h3,
+    .follow-text > h3 {
+        right: 15px;
+        width: 455px;
+    }
+    .donate-text > b,
+    .plant-text > b {
+        left: 15px;
+        width: 455px;
+    }
+    .adopt-text > b,
+    .follow-text > b {
+        right: 15px;
+        width: 455px;
+    }
+    header a {
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .main-text {
+        padding-left: 5px;
+    }
+    .payment21 {
+        margin-bottom: 10px;
+    }
+    .volunteers-wrap img {
+        max-width: 450px;
+    }
+    .map-wrap img {
+        max-width: 450px;
+    }
+}
+@media only screen and (max-width : 1200px) {
+    .faqs-wrapper {
+        padding-left: 5px;
+    }
+    textarea {
+        width: 99%;
+    }
+}
